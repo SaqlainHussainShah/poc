@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Virtual Keyboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="shortcut icon"  href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="dcode.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="keyboard.css">
+ -->	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+
+Name:
+<input type="text" class='use-keyboard-input' name="name" onkeydown="myFunctionTimeDown()" onkeypress="myFunctionTimeUp()">
+<br><br>
+Password:
+<input type="password" class='use-keyboard-input' name="password">
+<br><br>
+<button onclick="myFunction()">Submit</button>
+
+<!-- <div class="keyboard">
+	<div class="keyboard__keys">
+		
+		<button class="keyboard__key" type='button'>a</button>
+
+
+		<button class="keyboard__key keyboard__key--wide" type='button'>
+			<i class="material-icons">backspace</i>
+		</button>
+
+		<button class="keyboard__key keyboard__key--extra-wide" type='button'>
+			<i class="material-icons">space_bar</i>
+		</button>
+
+		<button class="keyboard__key keyboard__key--wide keyboard__key--activatable" type='button'>
+			<i class="material-icons">keyboard_capslock</i>
+		</button>
+
+
+		<button class="keyboard__key keyboard__key--wide keyboard__key--dark" type='button'>
+			<i class="material-icons">check_circle</i>
+		</button>
+
+
+		
+
+	</div>
+</div>
+ -->
+
+
+<script src='keyboard.js'></script>
+<script>
+function myFunction() {
+  console.log(variables_pressed)
+}
+
+function myFunctionTimeUp(){
+	t2=new Date();
+	console.log("t2 ", t2)
+
+}
+
+function myFunctionTimeDown(){
+	t1=new Date();
+	console.log("t1 : " ,t1)
+
+}
+</script>
+</body>
+
+
+</html>
